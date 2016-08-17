@@ -1,0 +1,67 @@
+﻿/*<body> Cor de fundo # 377254, cor de texto # FCD605, tamanho de fonte de 16px e fontes Verdana e Liberation.*/
+body {
+    font-family: Verdana;
+    background-color: #377254;
+    color: #FCD605;
+    font-size: 16px;
+}
+
+/*<a>Sem sublinhado, cor de link #FFFF33 e link visitado #F3EDA3.*/
+a:link {
+    color: #FFFF33;
+}
+
+a:visited {
+    color: #F3EDA3;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: circle;
+    line-height: 200%;
+    color: #F3EDA3;
+    margin-top: 30px;
+}
+
+
+/***************<ender>****************/
+/*alinhado a direita, tamanho de fonte 16px, espaçamento entre as linhas (line-height) de 150% e elemento todo colado na direita da janela (float com valor right).*/
+ender {
+    font-style: italic;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 150%;
+    float: right;
+}
+/***************<header>***************/
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+/**************<nav>***************/
+nav {
+    float: left;
+    display: block;
+    width: 20%;
+}
+
+/************<section>*****************/
+section {
+    display: block;
+    width: 77%;
+    float: right;
+}
+
+
+
+/***************<apres>****************/
+/*Alinhamento de texto centralizado (center).*/
+apres{
+    
+    text-align:center;
+}
