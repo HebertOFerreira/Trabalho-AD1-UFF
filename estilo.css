@@ -19,9 +19,13 @@ a {
     text-decoration: none;
 }
 
-ol, ul {
-    list-style-type: circle;
+ul{
     line-height: 200%;
+}
+
+.menu ul
+{
+    list-style-type: circle;
     color: #F3EDA3;
     margin-top: 30px;
 }
@@ -29,7 +33,7 @@ ol, ul {
 
 /***************<ender>****************/
 /*alinhado a direita, tamanho de fonte 16px, espaçamento entre as linhas (line-height) de 150% e elemento todo colado na direita da janela (float com valor right).*/
-ender {
+.ender {
     font-style: italic;
     text-align: right;
     text-decoration: none;
@@ -61,7 +65,85 @@ section {
 
 /***************<apres>****************/
 /*Alinhamento de texto centralizado (center).*/
-apres{
+.apres{
+ text-align:center;
+}
+
+
+/****************************Nova Página Bolas************************************/
+
+/*Borda inferior solida e com 3px, margem inferior de 6px e espaçamento do conteúdo com a borda inferior da célula (padding-bottom) de 15px.*/
+.imgLogo{
+border-bottom:3px solid;
+margin-bottom:6px;
+padding-bottom:15px;
+width:380px;
+}
+
+.produtos p {
+    font-weight: bold;
+}
+
+.produtos ol{ 
+    line-height: 150%;
+    margin-top: 10px;
+}
+
+.produtos{
+    float:left;
+    margin-top:20px;
+   
+}
+
+.produtos ol{
+    padding-left:40px;
     
-    text-align:center;
+}
+
+
+/****************************Nova Página Esportes************************************/
+
+/********<tabInfo>*********/
+/*Borda sólida e fina (DICA: border-collapse com valor collapse), margem superior de 6px, cor de fundo #FFFFBB, cor de texto #006600 e fontes arial e ubuntu*/
+.tabinfo {
+    border-collapse:collapse;
+    margin-top: 6px;
+    background-color: #FFFFBB;
+    font-family:Arial;
+    color:#006600;
+    width:550px;
+    padding:0px;
+}
+
+/*Borda de 2px, sólida e de cor #000000. Espaçamento do conteúdo com a borda da célula (padding) variável (6px 12px 6px 12px).*/
+
+td, th {
+border:2px solid;
+border-color: #000000;
+padding:6px 12px 6px 12px;
+}
+
+/*Cor de texto #FFFFFF, cor de fundo #0077BB, alinhamento vertical de texto no meio da célula (vertical-align com valor middle) e alinhamento horizontal de texto centralizado.*/
+/********<linTH>*********/
+.linTH {
+color: #FFFFFF;
+background-color: #0077BB;
+vertical-align:middle;
+text-align:center;
+}
+
+/*Cor de texto #006600, cor de fundo #AACC55 e alinhamento de texto a esquerda.*/
+/********<colTH>*********/
+.colTH{
+color:#006600;
+background-color:#AACC55;
+text-align:left;
+}
+/********<preco>*********/
+/*Cor de texto #CC0000, texto em negrito (bold) e alinhamento vertical de texto no meio da célula (middle).*/
+.preco {
+color:#CC0000;
+font-weight:bold;
+text-align:center;
+
 }
