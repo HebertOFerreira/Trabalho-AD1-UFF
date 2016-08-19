@@ -28,16 +28,16 @@
         <form class="formLinha">
             <fieldset>
                 <legend>Identificação</legend>
-                <label class="colPri" for="email">E-mail:</label> <input type="email" name="tEmail" id="inpGrande" />
-                <label class="colPri" for="senha">Senha:</label> <input type="password" name="tSenha" id="impMedio" />
-                <label class="elemDir" for="senha">Confirme:</label> <input type="password" name="tConfirm" id="impMedio" />
+                <label class="colPri" for="inpGrande">E-mail:</label> <input type="email" name="tEmail" id="inpGrande" />
+                <label class="colPri" for="impMedio">Senha:</label> <input type="password" name="tSenha" id="impMedio" />
+                <label class="elemDir" for="impConfirme">Confirme:</label> <input type="password" name="tConfirm" id="impConfirme" />
             </fieldset>
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label class="colPri" for="inpGrande">Nome:</label> <input type="text" name="tNome" id="inpGrande" />
-                <label class="colPri" for="inpGrande">Endereço:</label> <textarea name="tRua" id="inpGrande"></textarea>
-                <label class="colPri" for="impMedio">Telefone:</label> <input type="text" name="tTel" id="impMedio" />
-                <label class="cel" for="impMedio">Celular:</label> <input type="text" name="impCel" id="impMedio" />
+                <label class="colPri" for="inpNome">Nome:</label> <input type="text" name="tNome" id="inpNome" />
+                <label class="colPri" for="inpRua">Endereço:</label> <textarea name="tRua" id="inpRua"></textarea>
+                <label class="colPri" for="impTel">Telefone:</label> <input type="text" name="tTel" id="impTel" />
+                <label class="cel" for="impCel">Celular:</label> <input type="text" name="impCel" id="impCel" />
                 <fieldset class="fsEsq">
                     <legend>Nascimento:</legend>
                     <input type="number" name="tDia" value="" id="numDD" min="1" max="31" />
@@ -52,11 +52,11 @@
                     <input type="radio" name="tSexo" id="tFem" /><label for="tFem">Feminino</label>
                 </fieldset>
             </fieldset>
+            <div class="botoes">
+                <input type="button" name="tEnvia" value="Enviar" id="bBotoes" />
+                <input type="reset" value="Limpar" name="btLimpa" id="bBotoes">
+            </div>
         </form>
-        <div class="botoes">
-            <input type="button" name="bEnviar" value="Enviar" />
-            <input type="button" name="bLimpar" value="Limpar" />
-        </div>
     </section>
 </body>
 </html>

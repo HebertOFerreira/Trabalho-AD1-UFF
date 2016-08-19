@@ -141,6 +141,7 @@ fieldset {
     float: left;
     display: block;
     width: 90px;
+    margin-top:3px;
 }
 
 #inpGrande {
@@ -148,7 +149,32 @@ fieldset {
     margin-top: 5px;
 }
 
+#inpRua {
+    width: 370px;
+    margin-top: 5px;
+}
+
+#inpNome {
+    width: 370px;
+    margin-top: 5px;
+}
+
 #impMedio {
+    width: 120px;
+    margin-top: 5px;
+}
+
+#impTel {
+    width: 120px;
+    margin-top: 5px;
+}
+
+#impCel {
+    width: 120px;
+    margin-top: 5px;
+}
+
+#impConfirme {
     width: 120px;
     margin-top: 5px;
 }
@@ -191,7 +217,7 @@ fieldset {
 }
 
 .botoes {
-    margin-left: 390px;
+    margin-left: 378px;
 }
 /****************************Nova Página Compras************************************/
 #inpEmail {
