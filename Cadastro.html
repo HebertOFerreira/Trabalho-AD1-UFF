@@ -1,20 +1,22 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Cadastro</title>
+    <title>Bola da Vez</title>
     <meta charset="utf-8" />
     <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="ender">
-        Avenida Volta Redonda,906<br />
-        Tel:(21) 1234-5678 <br />
-        <a href=mailto:contato@boladavez.com.br>contato@boladavez.com.br</a>
+    <header>
+        <address class="ender">
+            Avenida Volta Redonda, 906<br />
+            Tel:(21) 1234-5678 <br />
+            <a href=mailto:contato@boladavez.com.br>contato@boladavez.com.br</a>
+        </address>
     </header>
     <div class="imgLogo">
         <img src="/imagens/LogoPequeno.png" alt="logotopo" />
     </div>
-    <nav class="menu">
+    <nav>
         <ul>
             <li><a href="BolaDaVez.html" target="_blank">Inicial</a></li>
             <li><a href="Bolas.html" target="_blank">Bolas</a></li>
@@ -23,40 +25,44 @@
             <li><a href="Compras.html" target="_blank">Compras</a></li>
         </ul>
     </nav>
-    <section class="cadastro">
-        <p>Cadastro</p>
-        <form class="formLinha">
-            <fieldset>
-                <legend>Identificação</legend>
-                <label class="colPri" for="inpGrande">E-mail:</label> <input type="email" name="tEmail" id="inpGrande" />
-                <label class="colPri" for="impMedio">Senha:</label> <input type="password" name="tSenha" id="impMedio" />
-                <label class="elemDir" for="impConfirme">Confirme:</label> <input type="password" name="tConfirm" id="impConfirme" />
-            </fieldset>
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <label class="colPri" for="inpNome">Nome:</label> <input type="text" name="tNome" id="inpNome" />
-                <label class="colPri" for="inpRua">Endereço:</label> <textarea name="tRua" id="inpRua"></textarea>
-                <label class="colPri" for="impTel">Telefone:</label> <input type="text" name="tTel" id="impTel" />
-                <label class="cel" for="impCel">Celular:</label> <input type="text" name="impCel" id="impCel" />
-                <fieldset class="fsEsq">
-                    <legend>Nascimento:</legend>
-                    <input type="number" name="tDia" value="" id="numDD" min="1" max="31" />
-                    /
-                    <input type="number" name="tPMes" value="" id="numDD" min="1" max="12" />
-                    /
-                    <input type="number" name="tAno" value="" id="numQD" min="1920" max="2016" />
+    <section>
+        <div class="cadastro">
+            <h3>Cadastro</h3>
+            <form>
+                <div class="formLinha">
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <label class="colPri" for="inpGrande">E-mail:</label> <input type="email" name="tEmail" id="inpGrande" />
+                    <label class="colPri" for="impMedio">Senha:</label> <input type="password" name="tSenha" id="impMedio" />
+                    <label class="elemDir" for="impConfirme">Confirme:</label> <input type="password" name="tConfirm" id="impConfirme" />
                 </fieldset>
-                <fieldset class="fsDir">
-                    <legend>Sexo:</legend>
-                    <input type="radio" name="tSexo" id="cMasc" /><label for="cMasc">Masculino</label>
-                    <input type="radio" name="tSexo" id="tFem" /><label for="tFem">Feminino</label>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label class="colPri" for="inpNome">Nome:</label> <input type="text" name="tNome" id="inpNome" />
+                    <label class="colPri" for="inpRua">Endereço:</label> <textarea name="tRua" id="inpRua"></textarea>
+                    <label class="colPri" for="impTel">Telefone:</label> <input type="text" name="tTel" id="impTel" />
+                    <label class="cel" for="impCel">Celular:</label> <input type="text" name="impCel" id="impCel" />
+                    <fieldset class="fsEsq">
+                        <legend>Nascimento:</legend>
+                        <input type="number" name="tDia" value="" id="numDD" min="1" max="31" />
+                        /
+                        <input type="number" name="tPMes" value="" id="numDD" min="1" max="12" />
+                        /
+                        <input type="number" name="tAno" value="" id="numQD" min="1920" max="2016" />
+                    </fieldset>
+                    <fieldset class="fsDir">
+                        <legend>Sexo:</legend>
+                        <input type="radio" name="tSexo" id="cMasc" /><label for="cMasc">Masculino</label>
+                        <input type="radio" name="tSexo" id="tFem" /><label for="tFem">Feminino</label>
+                    </fieldset>
                 </fieldset>
-            </fieldset>
-            <div class="botoes">
-                <input type="button" name="tEnvia" value="Enviar" id="bBotoes" />
-                <input type="reset" value="Limpar" name="btLimpa" id="bBotoes">
-            </div>
-        </form>
+                <div class="botoes">
+                    <input type="button" name="tEnvia" value="Enviar" id="bBotoes" />
+                    <input type="reset" value="Limpar" name="btLimpa" id="bBotoes">
+                </div>
+                    </div>
+            </form>
+        </div>
     </section>
 </body>
 </html>

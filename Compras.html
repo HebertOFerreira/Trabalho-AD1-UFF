@@ -1,20 +1,22 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Compras</title>
+    <title>Bola da Vez</title>
     <meta charset="utf-8" />
     <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="ender">
-        Avenida Volta Redonda,906<br />
-        Tel:(21) 1234-5678 <br />
-        <a href=mailto:contato@boladavez.com.br>contato@boladavez.com.br</a>
+    <header>
+        <address class="ender">
+            Avenida Volta Redonda, 906<br />
+            Tel:(21) 1234-5678 <br />
+            <a href=mailto:contato@boladavez.com.br>contato@boladavez.com.br</a>
+        </address>
     </header>
     <div class="imgLogo">
         <img src="/imagens/LogoPequeno.png" alt="logotopo" />
     </div>
-    <nav class="menu">
+    <nav>
         <ul>
             <li><a href="BolaDaVez.html" target="_blank">Inicial</a></li>
             <li><a href="Bolas.html" target="_blank">Bolas</a></li>
@@ -23,63 +25,65 @@
             <li><a href="Compras.html" target="_blank">Compras</a></li>
         </ul>
     </nav>
-    <section class="compras">
-        <p>Compras</p>
-        <form>
-            <fieldset>
-                <legend>Identificação</legend>
-                <label class="colPriCompras" for="inpEmail">E-mail:</label> <input type="email" name="tCompras" id="inpEmail" />
-                <label for="senha">Senha:</label> <input type="password" name="tSenha" id="senha" />
-                <h4>Se você ainda não tem cadastro clique <a href="Cadastro.html" target="_blank">aqui!</a></h4>
-            </fieldset>
-            <fieldset>
-                <label for="fsDirCompras"></label> <textarea name="tArea" id="fsDirCompras"></textarea>
-                <legend>Lista de Compras e Pagamento</legend>
-                <label for="cProdutos">Produtos:</label><br />
-                <select>
-                    <optgroup label="Basquete">
-                        <option selected>Bola-Basquete-Wilson</option>
-                    </optgroup>
-                    <optgroup label="Volei">
-                        <option>Bola-Volei-Wilson</option>
-                        <option>Bola-Volei-Penalty</option>
-                    </optgroup>
-                    <optgroup label="Tenis">
-                        <option>Bola-Tenis-Wilson</option>
-                        <option>Raquete-Tenis-Adams</option>
-                    </optgroup>
-                    <optgroup label="Futebol">
-                        <option>Bola-Futebol-Penalty-Matis</option>
-                        <option>Bola-Futebol-Penalty-Ultra</option>
-                        <option>Camisa-Futebol-Adidas-Alemanha</option>
-                        <option>Camisa-Futebol-Nike-Portugal</option>
-                        <option>Camisa-Futebol-Adidas-França</option>
-                    </optgroup>
-                </select>
-                <input type="button" name="tComprar" value="Comprar" />
-                <fieldset class="fsEsqCompras">
-                    <legend>Dados do Cartão</legend>
-                    <fieldset class="bsBand">
-                        <legend>Bandeira:</legend>
-                        <input type="radio" name="tCartao" id="cVisa" /><label for="cVisa">Visa</label>
-                        <input type="radio" name="tCartao" id="cMaster" /><label for="cMaster">Master</label>
-                        <input type="radio" name="tCartao" id="cAmex" /><label for="cAmex">Amex</label>
-                    </fieldset>
-                    <div class="identificacao">
-                        <label class="val" for="numDD">Validade:</label>
-                        <input type="number" name="tVal" min="1" max="12" id="numDD" />
-                        /
-                        <input type="number" name="tNum" min="2016" max="2022" id="numQD" /><br />
-                        <label class="nMro" for="cMro">Número:</label> <input type="text" id="cMro" />
-                    </div>
+    <section>
+        <div class="compras">
+            <h3>Compras</h3>
+            <form>
+                <fieldset>
+                    <legend>Identificação</legend>
+                    <label class="colPriCompras" for="inpEmail">E-mail:</label> <input type="email" name="tCompras" id="inpEmail" />
+                    <label for="senha">Senha:</label> <input type="password" name="tSenha" id="senha" />
+                    <h4>Se você ainda não tem cadastro clique <a href="Cadastro.html" target="_blank">aqui!</a></h4>
                 </fieldset>
-                <label class="tot" for="cTot">Valor: R$</label> <input type="text" name="tTotal" id="cTot" readonly />
-            </fieldset>
-            <div class="bots">
-                <input type="button" name="tEnvia" value="Enviar" id="bBotoes" />
-                <input type="reset" value="Limpar" name="btLimpa" id="bBotoes">
+                <fieldset>
+                    <label for="fsDirCompras"></label> <textarea name="tArea" id="fsDirCompras"></textarea>
+                    <legend>Lista de Compras e Pagamento</legend>
+                    <label for="cProdutos">Produtos:</label><br />
+                    <select>
+                        <optgroup label="Basquete">
+                            <option selected>Bola-Basquete-Wilson</option>
+                        </optgroup>
+                        <optgroup label="Volei">
+                            <option>Bola-Volei-Wilson</option>
+                            <option>Bola-Volei-Penalty</option>
+                        </optgroup>
+                        <optgroup label="Tenis">
+                            <option>Bola-Tenis-Wilson</option>
+                            <option>Raquete-Tenis-Adams</option>
+                        </optgroup>
+                        <optgroup label="Futebol">
+                            <option>Bola-Futebol-Penalty-Matis</option>
+                            <option>Bola-Futebol-Penalty-Ultra</option>
+                            <option>Camisa-Futebol-Adidas-Alemanha</option>
+                            <option>Camisa-Futebol-Nike-Portugal</option>
+                            <option>Camisa-Futebol-Adidas-França</option>
+                        </optgroup>
+                    </select>
+                    <input type="button" name="tComprar" value="Comprar" />
+                    <fieldset class="fsEsqCompras">
+                        <legend>Dados do Cartão</legend>
+                        <fieldset class="bsBand">
+                            <legend>Bandeira:</legend>
+                            <input type="radio" name="tCartao" id="cVisa" /><label for="cVisa">Visa</label>
+                            <input type="radio" name="tCartao" id="cMaster" /><label for="cMaster">Master</label>
+                            <input type="radio" name="tCartao" id="cAmex" /><label for="cAmex">Amex</label>
+                        </fieldset>
+                        <div class="identificacao">
+                            <label class="val" for="numDD">Validade:</label>
+                            <input type="number" name="tVal" min="1" max="12" id="numDD" />
+                            /
+                            <input type="number" name="tNum" min="2016" max="2022" id="numQD" /><br />
+                            <label class="nMro" for="cMro">Número:</label> <input type="text" id="cMro" />
+                        </div>
+                    </fieldset>
+                    <label class="tot" for="cTot">Valor: R$</label> <input type="text" name="tTotal" id="cTot" readonly />
+                </fieldset>
+                <div class="bots">
+                    <input type="button" name="tEnvia" value="Enviar" id="bBotoes" />
+                    <input type="reset" value="Limpar" name="btLimpa" id="bBotoes">
+                </div>
+            </form>
             </div>
-        </form>
-    </section>
+</section>
 </body>
 </html>

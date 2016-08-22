@@ -22,7 +22,7 @@ ul {
     line-height: 200%;
 }
 
-.menu ul {
+nav ul {
     list-style-type: circle;
     color: #F3EDA3;
     margin-top: 30px;
@@ -69,23 +69,13 @@ section {
     width: 380px;
 }
 
-.produtos p {
-    font-weight: bold;
-}
 
 .produtos ol {
     line-height: 150%;
     margin-top: 10px;
+    padding-left: 40px;
 }
-
-.produtos {
-    float: left;
-    margin-top: 20px;
-}
-
-    .produtos ol {
-        padding-left: 40px;
-    }
+ 
 /****************************Nova Página Esportes************************************/
 
 /********<tabInfo>*********/
@@ -96,8 +86,7 @@ section {
     background-color: #FFFFBB;
     font-family: Arial;
     color: #006600;
-    width: 550px;
-    padding: 0px;
+   
 }
 /*Borda de 2px, sólida e de cor #000000. Espaçamento do conteúdo com a borda da célula (padding) variável (6px 12px 6px 12px).*/
 td, th {
@@ -128,14 +117,13 @@ td, th {
     text-align: center;
 }
 /****************************Nova Página Cadastro************************************/
-/*<fieldset> Margem variável (20px 10px 0px 10px).*/
-.cadastro p {
-    font-weight: bold;
-}
 
+/*<fieldset> Margem variável (20px 10px 0px 10px).*/
 fieldset {
     margin: 20px 10px 0px 10px;
 }
+
+/*colPri Label da primeira coluna grudado a esquerda do formulário (DICA: float com valor left e display com valor block), com largura de 90px.*/
 
 .colPri {
     float: left;
@@ -143,10 +131,10 @@ fieldset {
     width: 90px;
     margin-top:3px;
 }
-
+/*inpGrande Input de tamanho grande com largura de 370px.*/
 #inpGrande {
     width: 370px;
-    margin-top: 5px;
+    
 }
 
 #inpRua {
@@ -159,9 +147,10 @@ fieldset {
     margin-top: 5px;
 }
 
+/*impMedio Input de tamanho médio com largura de 120px.*/
 #impMedio {
     width: 120px;
-    margin-top: 5px;
+    
 }
 
 #impTel {
@@ -179,8 +168,11 @@ fieldset {
     margin-top: 5px;
 }
 
+
+/*elemDir Elemento da última coluna grudado a direita do formulário (DICA: float com valor right e display com valor block).*/
+
 .elemDir {
-    padding-left: 35px;
+    padding-left: 32px;
 }
 
 .formLinha {
@@ -193,23 +185,26 @@ fieldset {
 }
 
 .cel {
-    padding-left: 52px;
+    padding-left: 49px;
 }
 
+/*fsEsq Fieldset posicionado em linha e grudado na borda esquerda (DICA: float com valor left e display com valor inline), margem 0px.*/
 .fsEsq {
     float: left;
     display: inline;
     margin: 0px;
 }
-
+/*numDD Input numérico de dois dígitos com largura de 30px.*/
 #numDD {
     width: 30px;
 }
 
+/*numQDInput numérico de quatro dígitos com largura de 50px.*/
 #numQD {
     width: 50px;
 }
 
+/*fsDir Fieldset posicionado em linha e grudado na borda direita (DICA: float com valor right e display com valor inline) , margem 0px.*/
 .fsDir {
     float: right;
     display: inline;
